@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #dfeaf5;
+  margin: 5% 0 0 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  margin: 50px auto;
+  position: relative;
+  min-width: 400px;
+  max-width: 650px;
+  max-height: 70%;
+}
+.app-content {
+  margin: 0 auto;
+  padding: 25px 0 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.app-container-2 {
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  max-height: 70%;
+}
+.app-content-2 {
+  margin: 0 auto;
+  padding: 10px 0 0;
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.image-cropper {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+.profile-pic {
+  display: block;
+  margin: auto;
+  height: 100%;
+}
