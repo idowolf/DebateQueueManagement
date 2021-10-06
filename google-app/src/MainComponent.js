@@ -15,7 +15,7 @@ class MainComponent extends React.Component {
         
         כשתסיימו את הראיון, המראיין ינחה אתכם לחדר הנאומים הרלוונטי.
         נא להיכנס לחדר בשקט ולהמתין לתורכם.
-        
+
         בהצלחה!`;
 
         return { __html: text };
@@ -82,7 +82,7 @@ class MainComponent extends React.Component {
             <div className="app-content-2" style={{width: '50%', margin: '0 auto'}}>
                 <img src="/clubfavicon.png" width="150px" />
                 <br />
-                המספר האחרון שנכנס<br />
+                המספר האחרון שנכנס לראיון<br />
                 {this.state.counter}
                 <div className="myblock">
                     <button onClick={() => this.incrementCounter(this.state.letter)}>+</button>
@@ -90,7 +90,7 @@ class MainComponent extends React.Component {
                 </div>
                 <br />
                 <br />
-                המספר האחרון שממתין בתור
+                המספר האחרון שקיבל מספר וממתין בתור
                 <br />
                 {this.state.lastCounter}
                 <div className="myblock">
