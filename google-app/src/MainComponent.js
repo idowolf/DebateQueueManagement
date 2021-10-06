@@ -1,8 +1,26 @@
 import React from "react";
 import firebase, { db } from "./Backend/fire"
 import "./App.css"
-
+import { DescriptionDiv } from "./styles";
 class MainComponent extends React.Component {
+
+    content() {
+        const text = `
+        ברוכים הבאים!
+        
+        נכנסתם עכשיו? פנו לנציגי הקבלה וקבלו מספר אישי.
+        
+        המיונים מחולקים לשני שלבים: קודם כל ראיון אישי ואחר כך נאום.
+        ברגע שתורכם יגיע יפנו אתכם לעמדת הראיונות - בבקשה לציין בפני המראיין את המספר שקיבלתם.
+        
+        כשתסיימו את הראיון, המראיין ינחה אתכם לחדר הנאומים הרלוונטי.
+        נא להיכנס לחדר בשקט ולהמתין לתורכם.
+        
+        בהצלחה!`;
+
+        return { __html: text };
+    }
+
     constructor(props) {
         super(props);
         console.log(this.props.match.params);
@@ -61,7 +79,9 @@ class MainComponent extends React.Component {
 
     render() {
         return (
-            <div className="app-content-2">
+            <div className="app-content-2" style={{width: '50%', margin: '0 auto'}}>
+                <img src="/clubfavicon.png" width="150px" />
+                <br />
                 המספר האחרון שנכנס<br />
                 {this.state.counter}
                 <div className="myblock">
@@ -77,6 +97,7 @@ class MainComponent extends React.Component {
                     <button onClick={() => this.incrementCounter(this.state.lastLetter)}>+</button>
                     <button onClick={() => this.decrementCounter(this.state.lastLetter)}>-</button>
                 </div>
+                <DescriptionDiv dangerouslySetInnerHTML={this.content()} />
             </div>
         )
     }

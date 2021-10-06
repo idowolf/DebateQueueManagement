@@ -12,10 +12,13 @@ in order to initialize a new website you need to open a new firebase project and
 
 /* main site configuration */
 const firebaseConfig = {
-// Set firebase config here...
-};
-
-
+    apiKey: "AIzaSyAGr1iRGrMrFEmonZ6ApLW1AVhubl9xSKo",
+    authDomain: "debate-queue-management.firebaseapp.com",
+    databaseURL: "https://debate-queue-management.firebaseio.com",
+    projectId: "debate-queue-management",
+    storageBucket: "debate-queue-management.appspot.com",
+    messagingSenderId: "959546934290",
+    appId: "1:959546934290:web:02dc31dc995031d9c644cb"};
 firebase.initializeApp(firebaseConfig);
 
 export const db = firebase.firestore();
